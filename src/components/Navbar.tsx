@@ -36,7 +36,7 @@ export default function Navbar() {
                     <img
                         src="/logo.png"
                         alt="GhostCode Logo"
-                        className="h-8 w-auto brightness-110 group-hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.3)] transition-all duration-300"
+                        className="h-10 sm:h-12 w-auto brightness-110 group-hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.4)] transition-all duration-300"
                     />
                 </a>
 
