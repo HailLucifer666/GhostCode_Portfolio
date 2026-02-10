@@ -33,12 +33,11 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-3 group">
-                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center font-mono font-bold text-sm group-hover:shadow-lg group-hover:shadow-neon-cyan/30 transition-shadow duration-300">
-                        👻
-                    </div>
-                    <span className="font-display font-semibold text-ghost-white/90 tracking-tight hidden sm:block">
-                        GhostCode
-                    </span>
+                    <img
+                        src="/logo.png"
+                        alt="GhostCode Logo"
+                        className="h-8 w-auto brightness-110 group-hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.3)] transition-all duration-300"
+                    />
                 </a>
 
                 {/* Desktop Nav */}

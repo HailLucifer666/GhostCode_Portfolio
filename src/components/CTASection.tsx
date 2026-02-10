@@ -133,9 +133,11 @@ export default function CTASection() {
             <div className="relative z-10 max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/[0.04]">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-indigo to-neon-cyan flex items-center justify-center font-mono font-bold text-xs">
-                            GC
-                        </div>
+                        <img
+                            src="/logo.png"
+                            alt="GhostCode"
+                            className="h-6 w-auto opacity-50 hover:opacity-100 transition-opacity"
+                        />
                         <span className="text-sm text-white/25 tracking-wide">
                             © 2025 GhostCode. Invisible systems. Visible results.
                         </span>
