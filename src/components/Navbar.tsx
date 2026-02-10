@@ -32,11 +32,11 @@ export default function Navbar() {
         >
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#" className="flex items-center gap-3 group">
+                <a href="#" className="flex items-center group">
                     <img
                         src="/logo.png"
                         alt="GhostCode Logo"
-                        className="h-10 sm:h-12 w-auto brightness-110 group-hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.4)] transition-all duration-300"
+                        className="w-52 h-10 object-cover object-center brightness-125 group-hover:drop-shadow-[0_0_15px_rgba(255,0,0,0.5)] transition-all duration-500"
                     />
                 </a>
 

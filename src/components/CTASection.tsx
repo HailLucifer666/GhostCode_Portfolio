@@ -136,7 +136,7 @@ export default function CTASection() {
                         <img
                             src="/logo.png"
                             alt="GhostCode"
-                            className="h-8 w-auto opacity-50 hover:opacity-100 transition-opacity"
+                            className="w-40 h-8 object-cover object-center opacity-50 hover:opacity-100 transition-opacity"
                         />
                         <span className="text-sm text-white/25 tracking-wide">
                             © 2025 GhostCode. Invisible systems. Visible results.
