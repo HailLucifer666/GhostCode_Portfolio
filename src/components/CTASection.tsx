@@ -11,93 +11,11 @@ export default function CTASection() {
             <div className="gradient-orb w-[1000px] h-[1000px] bg-neon-cyan top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.06]" />
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-                <ScrollReveal>
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass text-sm text-ghost-white/50 mb-10">
-                        <span className="relative flex h-2.5 w-2.5">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75" />
-                            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-neon-green" />
-                        </span>
-                        Open for new ghost systems 👻
-                    </div>
-                </ScrollReveal>
-
                 <ScrollReveal delay={0.1}>
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight leading-[1.05] mb-8">
-                        <span className="text-ghost-white/90">Stop doing </span>
-                        <span className="text-gradient">robot work</span>
-                        <br />
-                        <span className="text-ghost-white/90">get a ghost 👻</span>
-                    </h2>
-                </ScrollReveal>
-
-                <ScrollReveal delay={0.2}>
-                    <p className="text-lg sm:text-xl text-ghost-white/35 max-w-2xl mx-auto mb-14 font-light leading-relaxed">
-                        Most founders spend 20 hours a week on repetitive work. 😫 GhostCode builds AI systems 🤖
-                        that handle it automatically—in 48 hours ⏱️, for 1/10th the cost of hiring. 💰
-                    </p>
-                </ScrollReveal>
-
-                <ScrollReveal delay={0.3}>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-                        <motion.a
-                            href="mailto:acarghyachowdhury25@gmail.com"
-                            whileHover={{ scale: 1.05, y: -4 }}
-                            whileTap={{ scale: 0.97 }}
-                            className="group relative px-12 py-5 rounded-2xl bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-cyan text-white font-display font-semibold text-lg overflow-hidden shadow-2xl shadow-neon-cyan/15 hover:shadow-neon-cyan/30 transition-shadow duration-500"
-                        >
-                            <span className="relative z-10">Get Your Ghost System 👻</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-neon-purple via-neon-cyan to-neon-purple opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                        </motion.a>
-                        <motion.a
-                            href="#projects"
-                            whileHover={{ scale: 1.05 }}
-                            className="px-12 py-5 rounded-2xl glass text-white/50 font-medium text-lg hover:text-white/80 hover:border-white/15 transition-all duration-500"
-                        >
-                            See My Work
-                        </motion.a>
-                    </div>
-                </ScrollReveal>
-
-                {/* SpaceX-style orbit visualization */}
-                <div className="relative mt-28 h-48 flex items-center justify-center">
-                    {[200, 140, 80].map((size, i) => (
-                        <motion.div
-                            key={size}
-                            className="absolute rounded-full border"
-                            style={{
-                                width: size * 1.5,
-                                height: size * 1.5,
-                                borderColor: `rgba(99, 102, 241, ${0.05 + i * 0.03})`,
-                            }}
-                            animate={{ rotate: 360 }}
-                            transition={{
-                                duration: 30 - i * 8,
-                                repeat: Infinity,
-                                ease: "linear",
-                            }}
-                        >
-                            <div
-                                className="absolute w-1.5 h-1.5 rounded-full bg-neon-indigo/40"
-                                style={{ top: 0, left: "50%", transform: "translateX(-50%)" }}
-                            />
-                        </motion.div>
-                    ))}
-                    <motion.div
-                        animate={{ scale: [1, 1.3, 1] }}
-                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                        className="w-3 h-3 rounded-full bg-neon-indigo shadow-lg shadow-neon-indigo/50"
-                    />
-                </div>
-            </div>
-
-            {/* Social Links — Connect With Me */}
-            <div className="relative z-10 max-w-4xl mx-auto px-6 mt-20">
-                <ScrollReveal delay={0.4}>
                     <p className="text-xs font-mono tracking-[0.3em] text-white/25 uppercase text-center mb-8">
                         Connect With Me
                     </p>
-                    <div className="flex flex-wrap items-center justify-center gap-4">
+                    <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
                         {[
                             {
                                 name: "Linktree",
@@ -127,7 +45,7 @@ export default function CTASection() {
                                         <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017C1.5 8.414 2.35 5.56 3.996 3.51 5.845 1.205 8.598.024 12.179 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.74.725c-1.057-3.793-3.594-5.573-7.583-5.596-2.677.017-4.724.888-6.087 2.587-1.27 1.584-1.933 3.878-1.958 6.707.026 2.83.689 5.124 1.958 6.708 1.363 1.7 3.41 2.57 6.087 2.587 1.98-.016 3.517-.457 4.668-1.307 1.312-.97 1.975-2.394 1.975-4.261 0-1.27-.346-2.276-1.03-2.993-.637-.665-1.521-1.045-2.62-1.13.077.59.114 1.16.114 1.7 0 .658-.046 1.276-.135 1.85-.354 2.28-1.72 3.617-3.975 3.834a4.78 4.78 0 01-.526.028c-1.378 0-2.545-.493-3.372-1.424-.782-.88-1.192-2.087-1.192-3.494 0-1.4.408-2.604 1.183-3.486.827-.942 1.998-1.44 3.387-1.44.816 0 1.538.173 2.156.52.254-.922.622-1.706 1.1-2.34a6.15 6.15 0 00-3.272-.852c-2.3 0-4.097.767-5.17 2.2-.97 1.295-1.46 3.062-1.46 5.275 0 2.213.49 3.978 1.46 5.272 1.073 1.434 2.87 2.202 5.17 2.202h.003z" />
                                     </svg>
                                 ),
-                                gradient: "from-white/80 to-white/40",
+                                gradient: "from-pink-500 via-purple-500 to-yellow-500",
                             },
                             {
                                 name: "Gmail",
@@ -147,12 +65,53 @@ export default function CTASection() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.08, y: -3 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="group flex items-center gap-3 px-6 py-3.5 rounded-xl glass border border-white/[0.06] hover:border-white/15 text-white/50 hover:text-white transition-all duration-500"
+                                className="group flex items-center gap-3 px-6 py-3.5 rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-white/25 text-white/50 hover:text-white transition-all duration-500 shadow-xl hover:shadow-neon-purple/5"
                             >
                                 <span className="transition-colors duration-300">{link.icon}</span>
                                 <span className="text-sm font-medium tracking-wide">{link.name}</span>
                             </motion.a>
                         ))}
+                    </div>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.2}>
+                    {/* Badge */}
+                    <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass text-sm text-ghost-white/50 mb-10">
+                        <span className="relative flex h-2.5 w-2.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75" />
+                            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-neon-green" />
+                        </span>
+                        Open for new ghost systems 👻
+                    </div>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.3}>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight leading-[1.05] mb-8">
+                        <span className="text-ghost-white/90">Stop doing </span>
+                        <span className="text-gradient">robot work</span>
+                        <br />
+                        <span className="text-ghost-white/90">get a ghost 👻</span>
+                    </h2>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.4}>
+                    <p className="text-lg sm:text-xl text-ghost-white/35 max-w-2xl mx-auto mb-14 font-light leading-relaxed">
+                        Most founders spend 20 hours a week on repetitive work. 😫 GhostCode builds AI systems 🤖
+                        that handle it automatically—in 48 hours ⏱️, for 1/10th the cost of hiring. 💰
+                    </p>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.5}>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+                        <motion.a
+                            href="mailto:acarghyachowdhury25@gmail.com"
+                            whileHover={{ scale: 1.05, y: -4 }}
+                            whileTap={{ scale: 0.97 }}
+                            className="group relative px-12 py-5 rounded-2xl bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-cyan text-white font-display font-semibold text-lg overflow-hidden shadow-2xl shadow-neon-cyan/15 hover:shadow-neon-cyan/30 transition-shadow duration-500"
+                        >
+                            <span className="relative z-10">Get Your Ghost System 👻</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-neon-purple via-neon-cyan to-neon-purple opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                        </motion.a>
                     </div>
                 </ScrollReveal>
             </div>
